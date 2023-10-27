@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Andika:ital,wght@0,400;0,700;1,400&family=Fira+Sans:wght@700&family=Rubik&display=swap"
+        rel="stylesheet">
+    <title>Victor Lee - Web Dev</title>
+</head>
+
+<body>
+    <div class="menu--icon opener" id="menuIcon"></div>
+    <div class="mode--icon lightmode" id="modeIcon"></div>
+    <div class="menu--drop" id="menu">
+        <div class="menu--item skill--item item--inactive transition">
+            <a href="#skill-sec">
+                <h1 class="item--title" id="skill-link">Skills</h1>
+            </a>
+        </div>
+        <div class="menu--item projects--item item--inactive transition">
+            <a href="#proj-sec">
+                <h1 class="item--title" id="proj-link">Projects</h1>
+            </a>
+        </div>
+        <div class="menu--item contact--item item--inactive transition">
+            <a href="#cont-sec">
+                <h1 class="item--title" id="cont-link">Contact</h1>
+            </a>
+        </div>
+
+    </div>
+    <div class="falsebody transition" id="falseB">
+
+        <div class="hero transition" id="hero">
+            <h1 class="hero--title">Frontend Developer<br>& Javascript Enjoyer</h1>
+            <h3 class="hero--subtitle"> Learning and building, and learning<br>some more.</h3>
+        </div>
+
+        <main class="container">
+            <img class="portrait transition" id="portrait" src="img/portrait.jpg" alt="Victor Lee">
+
+            <section class="about-sec transition" id="about-sec">
+                <h1 class="about--title">Hello, my name is Victor Lee</h1>
+                <p class="about--para">
+                    Im a front-end developer with experience in React and Javascript. My
+                    experience in web development began in 2016 after I took an optional course at Berkeley City
+                    College learning HTML and CSS. It wasn't until a little over a year ago that my interest truly
+                    sparked
+                    and I began work to refine and expand my working knowledge. Once I completed the Front-End
+                    Developer course at Nucamp, I began an in-depth study of Javascript building small apps for
+                    creatives,
+                    and occasionally, <b>games</b>!
+                </p>
+            </section>
+            <section class="sec skill-sec transition" id="skill-sec">
+                <div class="card-box transition" id="skill-card">
+                    <h1 class="sec--title card--title">Skills & Tools</h1>
+                    <p class="sec--subtitle skill--subtitle">I focus on Frontend foundations to build from the
+                        ground
+                        up!</p>
+                    <div class="logo--container">
+                        <div class="logo--box">
+                            <img src="svg/LogosHtml.svg" alt="HTML">
+                            <p>Html</p>
+                        </div>
+                        <div class="logo--box">
+                            <img src="svg/LogosCss.svg" alt="CSS">
+                            <p>Css</p>
+                        </div>
+                        <div class="logo--box">
+                            <img src="svg/LogosSass.svg" alt="SASS">
+                            <p>Sass</p>
+                        </div>
+                        <div class="logo--box">
+                            <img src="svg/LogosJavascript.svg" alt="Javascript">
+                            <p>Javascript</p>
+                        </div>
+                        <div class="logo--box">
+                            <img src="svg/LogosReact.svg" alt="React">
+                            <p>React</p>
+                        </div>
+                        <div class="logo--box">
+                            <img src="svg/LogoGithub.svg" alt="Git">
+                            <p>Github</p>
+                        </div>
+                        <div class="logo--box">
+                            <img src="svg/LogosNodejs.svg" alt="Node.Js">
+                            <p>Node.js</p>
+                        </div>
+                        <div class="logo--box">
+                            <img src="svg/LogosBootstrap.svg" alt="Bootstrap">
+                            <p>Bootstrap</p>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+
+            <section class="sec project-sec transition" id="proj-sec">
+                <h1 class="sec--title project--title">Projects</h1>
+                <p class="sec--subtitle project--subtitle">My pride and joy, built from scratch!</p>
+                <div class="card--container">
+                    <div class="card rat--card">
+                        <div class="card--overlay">
+                            <p>
+                                A hungergames-like simulator making use of Object-oriented programming<br>and DOM
+                                manipulation.
+                            </p>
+                            <div>
+                                <a href="https://github.com/vlee-9/proj.Rat-Sim" target="_blank"><button
+                                        class="card--btn">Git</button></a>
+                                <a href="https://vlee-9.github.io/proj.Rat-Sim/" target="_blank"><button
+                                        class="card--btn">Live</button></a>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="card gen--card">
+                        <div class="card--overlay">
+                            <p>
+                                A prompt generator for artists! User selects settings for prompt elements pulled at
+                                random from various arrays.
+                            </p>
+                            <div>
+                                <a href="https://github.com/vlee-9/Character-Prompt-Generator" target="_blank"><button
+                                        class="card--btn">Git</button></a>
+                                <a href="https://vlee-9.github.io/Character-Prompt-Generator/" target="_blank"><button
+                                        class="card--btn">Live</button></a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="sec contact--sec transition" id="cont-sec">
+                <div class="card-box transition" id="cont-card">
+                    <h1 class="sec--title card--title">Contact</h1>
+                    <form class="contact--form" action="">
+                        <div class="f--item form--name">
+                            <label for="con-name">Name</label>
+                            <input class="" type="text" id="con-name" placeholder="...?" required>
+                        </div>
+                        <div class="f--item form--email">
+                            <label for="con-email">Email</label>
+                            <input class="" type="email" id="con-email" placeholder="...?" required>
+                        </div>
+                        <div class="f--item form--messege">
+                            <label for="messege">Messege</label>
+                            <textarea type="text" name="" id="messege" required></textarea>
+                        </div>
+
+                        <input class="f--submit" type="submit" value="Submit">
+                    </form>
+                </div>
+
+
+
+            </section>
+
+
+        </main>
+        <footer class="transition" id="foot">
+            <h2>Catch me online!</h2>
+            <ul class="link--list">
+                <li class="link--list-item">
+                    <a href="#"><img src="svg/LogosLinkedin.svg" alt=""></a>
+                </li>
+                <li class="link--list-item">
+                    <a href="#"><img src="svg/LogoGithub.svg" alt=""></a>
+                </li>
+            </ul>
+            <p>Built from cratch by me © Victor Lee 2023</p>
+        </footer>
+
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>
