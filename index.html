@@ -8,6 +8,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Andika:ital,wght@0,400;0,700;1,400&family=Fira+Sans:wght@700&family=Rubik&display=swap"
         rel="stylesheet">
+    <link rel="icon" href="svg/vflLogo.svg">
     <title>Victor Lee - Web Dev</title>
 </head>
 
@@ -139,18 +140,18 @@
             <section class="sec contact--sec transition" id="cont-sec">
                 <div class="card-box transition" id="cont-card">
                     <h1 class="sec--title card--title">Contact</h1>
-                    <form class="contact--form" action="">
+                    <form class="contact--form" id="form" action="https://formsubmit.co/c40c5d1e4bca40c916164d6aa441bbef" method="POST">
                         <div class="f--item form--name">
                             <label for="con-name">Name</label>
                             <input class="" type="text" id="con-name" placeholder="...?" required>
                         </div>
                         <div class="f--item form--email">
                             <label for="con-email">Email</label>
-                            <input class="" type="email" id="con-email" placeholder="...?" required>
+                            <input class="" type="email" name="email" id="con-email" placeholder="...?" required>
                         </div>
                         <div class="f--item form--messege">
-                            <label for="messege">Messege</label>
-                            <textarea type="text" name="" id="messege" required></textarea>
+                            <label for="message">Message</label>
+                            <textarea type="text" name="message" id="message" required></textarea>
                         </div>
 
                         <input class="f--submit" type="submit" value="Submit">
@@ -173,7 +174,7 @@
                     <a href="#"><img src="svg/LogoGithub.svg" alt=""></a>
                 </li>
             </ul>
-            <p>Built from cratch by me © Victor Lee 2023</p>
+            <p>Built from scratch by me! © <b>Victor Lee</b> 2023</p>
         </footer>
 
     </div>

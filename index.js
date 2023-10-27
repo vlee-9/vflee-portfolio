@@ -6,11 +6,10 @@ const projCards = document.getElementsByClassName("card")
 const projCardOverlay = document.getElementsByClassName("card--overlay")
 
 const falseBodyEl = document.getElementById("falseB")
-// const skillSec = document.getElementById("skill-sec")
-// const projSec = document.getElementById("proj-sec")
 const linkToSkill = document.getElementById("skill-link")
 const linkToProj = document.getElementById("proj-link")
 const linkToCont = document.getElementById("cont-link")
+const conForm = document.getElementById("form")
 
 function openMenu() {
     menuIcon.classList.remove("opener")
@@ -83,7 +82,6 @@ menuIcon.addEventListener("click", function () {
     else {
         closeMenu()
     }
-
 })
 
 modeIcon.addEventListener("click", function () {
@@ -93,7 +91,6 @@ modeIcon.addEventListener("click", function () {
     else {
         lightMode()
     }
-
 })
 
 linkToSkill.addEventListener("click", function () {
@@ -105,3 +102,7 @@ linkToProj.addEventListener("click", function () {
 linkToCont.addEventListener("click", function () {
     closeMenu()
 })
+
+// conForm.addEventListener("submit", function(){
+//     console.log("yay!")
+// })
