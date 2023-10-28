@@ -10,6 +10,8 @@ const linkToSkill = document.getElementById("skill-link")
 const linkToProj = document.getElementById("proj-link")
 const linkToCont = document.getElementById("cont-link")
 const conForm = document.getElementById("form")
+const liIcon = document.getElementById("LI-logo")
+const gitIcon = document.getElementById("Git-logo")
 
 function openMenu() {
     menuIcon.classList.remove("opener")
@@ -48,7 +50,20 @@ function toggleDarkMode() {
     document.getElementById("foot").classList.toggle("dmode1")
     document.getElementById("con-name").classList.toggle("darkinput")
     document.getElementById("con-email").classList.toggle("darkinput")
-    document.getElementById("messege").classList.toggle("darkinput")
+    document.getElementById("message").classList.toggle("darkinput")
+    document.getElementById("submit").classList.toggle("darkbtn")
+
+    if(liIcon.alt == "LinkedIn l"){
+        liIcon.alt = "LinkedIn d"
+        liIcon.src = "svg/LogosLinkedinAlt.svg"
+        gitIcon.src = "svg/LogoGithubAlt.svg"
+    }
+    else {
+        liIcon.alt = "LinkedIn l"
+        liIcon.src = "svg/LogosLinkedin.svg"
+        gitIcon.src = "svg/LogoGithub.svg"
+    }
+
 }
 function toggleDMCards(){
     for(let i = 0; i < projCards.length;i++){

@@ -16,34 +16,34 @@
     <div class="menu--icon opener" id="menuIcon"></div>
     <div class="mode--icon lightmode" id="modeIcon"></div>
     <div class="menu--drop" id="menu">
-        <div class="menu--item skill--item item--inactive transition">
+        <div class="menu--item skill--item item--inactive ">
             <a href="#skill-sec">
                 <h1 class="item--title" id="skill-link">Skills</h1>
             </a>
         </div>
-        <div class="menu--item projects--item item--inactive transition">
+        <div class="menu--item projects--item item--inactive ">
             <a href="#proj-sec">
                 <h1 class="item--title" id="proj-link">Projects</h1>
             </a>
         </div>
-        <div class="menu--item contact--item item--inactive transition">
+        <div class="menu--item contact--item item--inactive ">
             <a href="#cont-sec">
                 <h1 class="item--title" id="cont-link">Contact</h1>
             </a>
         </div>
 
     </div>
-    <div class="falsebody transition" id="falseB">
+    <div class="falsebody " id="falseB">
 
-        <div class="hero transition" id="hero">
+        <div class="hero " id="hero">
             <h1 class="hero--title">Frontend Developer<br>& Javascript Enjoyer</h1>
             <h3 class="hero--subtitle"> Learning and building, and learning<br>some more.</h3>
         </div>
 
         <main class="container">
-            <img class="portrait transition" id="portrait" src="img/portrait.jpg" alt="Victor Lee">
+            <img class="portrait " id="portrait" src="img/portrait.jpg" alt="Victor Lee">
 
-            <section class="about-sec transition" id="about-sec">
+            <section class="about-sec " id="about-sec">
                 <h1 class="about--title">Hello, my name is Victor Lee</h1>
                 <p class="about--para">
                     Im a front-end developer with experience in React and Javascript. My
@@ -56,8 +56,8 @@
                     and occasionally, <b>games</b>!
                 </p>
             </section>
-            <section class="sec skill-sec transition" id="skill-sec">
-                <div class="card-box transition" id="skill-card">
+            <section class="sec skill-sec " id="skill-sec">
+                <div class="card-box " id="skill-card">
                     <h1 class="sec--title card--title">Skills & Tools</h1>
                     <p class="sec--subtitle skill--subtitle">I focus on Frontend foundations to build from the
                         ground
@@ -100,7 +100,7 @@
 
             </section>
 
-            <section class="sec project-sec transition" id="proj-sec">
+            <section class="sec project-sec " id="proj-sec">
                 <h1 class="sec--title project--title">Projects</h1>
                 <p class="sec--subtitle project--subtitle">My pride and joy, built from scratch!</p>
                 <div class="card--container">
@@ -137,13 +137,15 @@
                     </div>
                 </div>
             </section>
-            <section class="sec contact--sec transition" id="cont-sec">
-                <div class="card-box transition" id="cont-card">
+
+            <section class="sec contact--sec " id="cont-sec">
+                <div class="card-box " id="cont-card">
                     <h1 class="sec--title card--title">Contact</h1>
-                    <form class="contact--form" id="form" action="https://formsubmit.co/c40c5d1e4bca40c916164d6aa441bbef" method="POST">
+                    <form class="contact--form" id="form"
+                        action="https://formsubmit.co/c40c5d1e4bca40c916164d6aa441bbef" method="POST">
                         <div class="f--item form--name">
                             <label for="con-name">Name</label>
-                            <input class="" type="text" id="con-name" placeholder="...?" required>
+                            <input class="" type="text" name="name" id="con-name" placeholder="...?" required>
                         </div>
                         <div class="f--item form--email">
                             <label for="con-email">Email</label>
@@ -154,24 +156,21 @@
                             <textarea type="text" name="message" id="message" required></textarea>
                         </div>
 
-                        <input class="f--submit" type="submit" value="Submit">
+                        <input class="f--submit" type="submit" value="Submit" id="submit">
                     </form>
                 </div>
-
-
-
             </section>
-
-
         </main>
-        <footer class="transition" id="foot">
+
+        <footer class="" id="foot">
             <h2>Catch me online!</h2>
             <ul class="link--list">
                 <li class="link--list-item">
-                    <a href="#"><img src="svg/LogosLinkedin.svg" alt=""></a>
+                    <a href="https://www.linkedin.com/in/victor-l-254362133/" target="_blank"><img src="svg/LogosLinkedin.svg"
+                            alt="LinkedIn l" id="LI-logo"></a>
                 </li>
                 <li class="link--list-item">
-                    <a href="#"><img src="svg/LogoGithub.svg" alt=""></a>
+                    <a href="https://github.com/vlee-9" target="_blank"><img src="svg/LogoGithub.svg" alt="Github " id="Git-logo"></a>
                 </li>
             </ul>
             <p>Built from scratch by me! © <b>Victor Lee</b> 2023</p>
