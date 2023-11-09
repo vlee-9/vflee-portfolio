@@ -13,6 +13,20 @@ const conForm = document.getElementById("form")
 const liIcon = document.getElementById("LI-logo")
 const gitIcon = document.getElementById("Git-logo")
 
+for(let i = 0; i<projCards.length; i++){
+    projCards[i].addEventListener("click", function () {
+        for(let j = 0; j<projCards.length; j++){
+            if(projCards[j].classList.contains("card-active")){
+                projCardOverlay[j].classList.toggle("card--overlay-active")
+                projCards[j].classList.toggle("card-active")
+            }
+        }
+        projCardOverlay[i].classList.toggle("card--overlay-active")
+        projCards[i].classList.toggle("card-active")
+    })
+}
+
+
 function openMenu() {
     menuIcon.classList.remove("opener")
     menuIcon.classList.add("closer")
@@ -117,7 +131,3 @@ linkToProj.addEventListener("click", function () {
 linkToCont.addEventListener("click", function () {
     closeMenu()
 })
-
-// conForm.addEventListener("submit", function(){
-//     console.log("yay!")
-// })

@@ -33,7 +33,7 @@ button,
 
 .about--para,
 .card-box,
-.card--container{
+.card--container {
     max-width: 780px;
 }
 
@@ -354,10 +354,20 @@ footer {
     border: 2px #ddd solid;
     overflow: hidden;
     box-shadow: 0px 3px 5px #8a8a80;
+    cursor: pointer;
 
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    transition: transform .2s ease-in-out;
+}
+
+.card:hover {
+    transform: translate(0, -3px);
+}
+
+.card-active {
+    cursor: default;
 }
 
 .rat--card {
@@ -374,7 +384,7 @@ footer {
     width: 100%;
     height: 100%;
     padding: 20px;
-
+    visibility: hidden;
     opacity: 0%;
     transition: opacity .25s ease-in-out, backdrop-filter .25s ease-out;
 
@@ -384,8 +394,10 @@ footer {
     color: #fafaf0;
 }
 
-.card--overlay:hover {
+.card--overlay-active {
+    visibility: visible;
     backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
     background-color: #5a5a5095;
     opacity: 100%;
 }
@@ -396,8 +408,8 @@ footer {
 
 .card--btn {
     margin: 0 7px;
-    width: 90px;
-    padding: 7px 14px;
+    min-width: 90px;
+    padding: .4em 1em;
 
     outline: none;
     border: none;
@@ -405,9 +417,6 @@ footer {
 
     border-radius: 10px;
     font-size: 17px;
-}
-
-.card--btn a {
     text-decoration: none;
     color: #000;
 }
@@ -535,6 +544,7 @@ footer {
 .dmode3-2 {
     background-color: #594f59;
 }
+
 .dmode3-3 {
     background-color: #cac0ca;
 }
@@ -549,25 +559,28 @@ footer {
     border: 2px #837383 solid;
 }
 
-.dark-card-overlay:hover {
+.dark-card-overlay {
     background-color: #322d32a5;
 }
+
 .darkinput[type="text"]:focus,
 .darkinput[type="email"]:focus {
     outline: #221d22 solid 2px;
 }
-.darkbtn:active{
+
+.darkbtn:active {
     border: 2px #cac0ca solid;
 }
 
 @media only screen and (min-width:800px) {
 
-    .portrait{
+    .portrait {
         width: 200px;
         top: -105px;
     }
+
     .menu--drop,
     .menu--icon {
         display: none;
     }
-} 
+}
