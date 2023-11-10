@@ -13,19 +13,25 @@ const conForm = document.getElementById("form")
 const liIcon = document.getElementById("LI-logo")
 const gitIcon = document.getElementById("Git-logo")
 
-for(let i = 0; i<projCards.length; i++){
+for (let i = 0; i < projCards.length; i++) {
     projCards[i].addEventListener("click", function () {
-        for(let j = 0; j<projCards.length; j++){
-            if(projCards[j].classList.contains("card-active")){
-                projCardOverlay[j].classList.toggle("card--overlay-active")
-                projCards[j].classList.toggle("card-active")
-            }
+        if (projCards[i].classList.contains("card-active")) {
+            projCardOverlay[i].classList.toggle("card--overlay-active")
+            projCards[i].classList.toggle("card-active")
         }
-        projCardOverlay[i].classList.toggle("card--overlay-active")
-        projCards[i].classList.toggle("card-active")
+        else {
+            for (let j = 0; j < projCards.length; j++) {
+                if (projCards[j].classList.contains("card-active")) {
+                    projCardOverlay[j].classList.toggle("card--overlay-active")
+                    projCards[j].classList.toggle("card-active")
+                }
+            }
+            projCardOverlay[i].classList.toggle("card--overlay-active")
+            projCards[i].classList.toggle("card-active")
+        }
+
     })
 }
-
 
 function openMenu() {
     menuIcon.classList.remove("opener")
@@ -67,7 +73,7 @@ function toggleDarkMode() {
     document.getElementById("message").classList.toggle("darkinput")
     document.getElementById("submit").classList.toggle("darkbtn")
 
-    if(liIcon.alt == "LinkedIn l"){
+    if (liIcon.alt == "LinkedIn l") {
         liIcon.alt = "LinkedIn d"
         liIcon.src = "svg/LogosLinkedinAlt.svg"
         gitIcon.src = "svg/LogoGithubAlt.svg"
@@ -79,11 +85,11 @@ function toggleDarkMode() {
     }
 
 }
-function toggleDMCards(){
-    for(let i = 0; i < projCards.length;i++){
+function toggleDMCards() {
+    for (let i = 0; i < projCards.length; i++) {
         projCards[i].classList.toggle("darkcard")
     }
-    for(let i = 0; i < projCardOverlay.length;i++){
+    for (let i = 0; i < projCardOverlay.length; i++) {
         projCardOverlay[i].classList.toggle("dark-card-overlay")
     }
 }

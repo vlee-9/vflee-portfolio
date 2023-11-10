@@ -375,6 +375,11 @@ footer {
     background-color: #000;
 }
 
+.srrw--card {
+    background-image: url("img/SRRW.png");
+    background-color: #000;
+}
+
 .gen--card {
     background-image: url("img/CPG1.png");
     background-color: #fafaf0;
@@ -387,7 +392,7 @@ footer {
     border-radius: 18px;
     visibility: hidden;
     opacity: 0%;
-    transition: opacity .25s ease-in-out, backdrop-filter .25s ease-out;
+    transition: opacity .25s ease-in-out, backdrop-filter .25s ease-out, visibility .25s ease-in-out;
 
     font-size: 17px;
     text-align: center;
@@ -411,6 +416,7 @@ footer {
     margin: 0 7px;
     min-width: 90px;
     padding: .4em 1em;
+    background-color: #eee;
 
     outline: none;
     border: none;
@@ -420,6 +426,13 @@ footer {
     font-size: 17px;
     text-decoration: none;
     color: #000;
+}
+
+.card--btn:hover{
+    transform: translate(0, -1px);
+}
+.card--btn:active{
+    background-color: #ccc;
 }
 
 .contact--sec {
